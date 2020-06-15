@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>markdown</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                width: 80%;
+                padding-left: 3%;
+                margin-left: auto;
+                margin-right: auto;
+                border-left: 1px solid rgb(115, 115, 252);
+                border-right: 1px solid rgb(115, 115, 252);
+            }
+            xmp, code {
+                background-color: rgb(221, 221, 221);
+                width: 90%;
+            }
+            xmp.inline {
+                width: 25px;
+            }
+            table {
+                border-collapse: collapse;
+            }
+
+            table,th, td{
+                border: 1px solid black;
+            }
+        </style>    
+        
+    </head>
+    <body>
+
+        <h1 id="table-of-contents">Table of Contents</h1>
+        <ul>
+            <li>
+                <a href="#table-of-contents">Table of Contents</a>
+            </li>
+            <ul>
+                <ul>
+                    <li>
+                        <a href="#quest-ce-que-markdown">Qu'est-ce que Markdown?</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#syntax">Syntax</a>
+                    <ul>
+                        <li>
+                            <a href="#header">Header</a>
+                        </li>
+                        <li>
+                            <a href="#emphasis">Emphasis</a>
+                        </li>
+                        <li>
+                            <a href="#list">List</a>
+                        </li>
+                        <ul>
+                            <li>
+                                <a href="#non-ordonné">Non ordonné</a>
+                            </li>
+                            <li>
+                                <a href="#ordonné">Ordonné</a>
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="#image">Image</a>
+                        </li>
+                        <li>
+                            <a href="#liens">Liens</a>
+                        </li>
+                        <li>
+                            <a href="#blockquotes">Blockquotes</a>
+                        </li>
+                        <li>
+                            <a href="#code-en-ligne">Code en ligne</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#tableau">Tableau</a>
+                    </li>
+                    <li>
+                        <a href="#listes-de-tâches">Listes de tâches</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#lectures-complémentaires">Lectures complémentaires</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>    
+        </ul>
+
+        <p> retour au menu principal <a href="./index.html"><ins>(Index)</ins></a></p>
+
+
+
+        <h4 id="quest-ce-que-markdown">Qu'est-ce que Markdown?</h4>
+
+        <ul>
+            <li>
+                <p>
+                    Markdown est un langage de balisage léger avec une syntaxe de formatage<br> de texte brut.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Cela signifie qu'en utilisant seulement quelques symboles supplémentaires<br> dans votre texte, Markdown vous aide à créer un document avec une structure explicite.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Par exemple, en texte brut, rien n'indique quel texte est en <strong>gras</strong>,<br> en <em>italic</em> ou est un lien. Mais avec MarkDown, en utilisant un symbole de certaines<br> manières, vous pouvez.
+                </p>
+            </li>
+        </ul>
+        
+
+        <p>Ici une liste de <strong><em>Syntax</em></strong> ce que MarkDown peut faire:</p>
+
+
+        <h3 id="syntax">Syntax</h3>
+
+        <h4 id="header">Header</h4>
+
+        <xmp>
+            #headers is like <h1>headers</h1>
+            ##headers is like <h2>headers</h2>
+            .
+            .
+            .
+            ####headers is like <h6>headers</h6>
+        </xmp>
+
+        <h4 id="emphasis">Emphasis</h4>
+        
+        *italic* ou _italic_ </code>   <em>italic</em><br>
+            <code>**bold** ou __bold__</code>    <strong>bold</strong><br>
+            ou combiner les deux<br>
+           <code>_ **comb**_ ou __*comb*__</code>     <strong><em>comb</em></strong><br>
+        </code>
+
+        <h4 id="list">List</h4>
+        <h6 id="non-ordonné">Non ordonné</h6>
+
+        <xmp>
+        * un<br>
+        * deux <br>
+        * trois<br>
+        * un<br>
+        * deux<br>
+        </xmp>
+
+        <ul>
+            <li>
+                <p>
+                    un
+                </p>
+            </li>
+            <li>
+                <p>
+                    deux
+                </p>
+            </li>
+            <li>
+                <p>
+                    trois
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            un
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            deux
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h6 id="ordommé">Ordonné</h6>
+
+        <xmp>
+            1. un
+            1. deux 
+            1. trois
+            1. un
+            1. deux
+        </xmp>
+        <ol>
+            <li>
+                un
+            </li>
+            <li>
+                deux
+            </li>
+            <li>
+                trois
+                <ol>
+                    <li>
+                        un
+                    </li>
+                    <li>
+                        deux
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+
+        <h4 id="image">Image</h4> 
+        <xmp>
+
+        ![web Dev](./ressources/in-case-of-fire.jpg)
+
+        </xmp>
+
+        <br>
+
+        <img src="./ressources/in-case-of-fire.jpg" alt="web Dev">
+
+        <h4 id="liens">Liens</h4>
+
+        <xmp> http://github.com  -  automatic!</xmp> <br>
+        <a href="http://github.com">GitHub</a><xmp> [GitHub](http://github.com) </xmp> <br>
+
+        <h4 id="blockquotes">Blockquotes</h4>
+
+        <xmp>
+        >c'est un texte de test
+        >>encore une fois c'est un texte de test
+        </xmp>
+        <br>
+
+        >c'est un texte de test
+        >>encore une fois c'est un texte de test
+
+        <h4 id="code-en-ligne">Code en ligne</h4> 
+        <xmp>
+        Je pense que vous devriez utiliser
+        L'élément `<a>` ici à la place.
+        </xmp>
+        <br>
+
+        Je pense que vous devriez utiliser
+        L'élément <code class="inline">< a ></code> ici à la place.
+
+
+        <h3 id="tableau">Tableau</h3> 
+        
+        <xmp>
+
+            | titre1| titre2| titre3|
+            |-------|:-----:|------:|
+            | col 1 | col 2 | col 3 |
+            | col 1 | col 2 | col 3 |
+            | col 1 | col 2 | col 3 |            
+        </xmp>
+        <table>
+            <tr>
+                <th>
+                    titre1
+                </th>
+                <th>
+                    titre2
+                </th>
+                <th>
+                    titre3
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    col 1
+                </td>
+                <td>
+                    col 2
+                </td>
+                <td>
+                    col 3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    col 1
+                </td>
+                <td>
+                    col 2
+                </td>
+                <td>
+                    col 3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    col 1
+                </td>
+                <td>
+                    col 2
+                </td>
+                <td>
+                    col 3
+                </td>
+            </tr>
+        </table>
+
+        <h3 id="listes-de-tâches">Listes de tâches</h3> 
+
+        <xmp>
+        - [x] un
+        - [ ] deux 
+        - [x] trois
+        </xmp>
+        <ul>
+            <li>
+                <input type="checkbox" id="un" name="un" checked>
+                <label for="un">un</label>
+            </li>
+            <li>
+                <input type="checkbox" id="deux" name="deux" >
+                <label for="deux">deux</label>
+            </li>
+            <li>
+                <input type="checkbox" id="trois" name="trois" checked>
+                <label for="trois">trois</label>
+            </li>
+        </ul>
+        
+
+
+        <h4 id="lectures-complémentaires">Lectures complémentaires</h4> 
+        <ul>
+            <li>
+                <a href="https://github.github.com/gfm/">GitHub Flavored MarUtilisation du Markdown pour intégrer du code:</a>
+            </li>
+            <li>
+                <a href="https://help.github.com/en/articles/basic-writing-and-formatting-syntax">Basic writing and formatting syntax</a>
+            </li>
+        </ul>
+
+       <p>retour à <a href="./index.html">Main</a></p>
+    </body>
+</html>

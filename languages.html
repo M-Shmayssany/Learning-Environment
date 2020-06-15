@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lanuages</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                width: 80%;
+                padding-left: 3%;
+                margin-left: auto;
+                margin-right: auto;
+                border-left: 1px solid rgb(115, 115, 252);
+                border-right: 1px solid rgb(115, 115, 252);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="table-of-contents">Table of Contents</h1> 
+<ul>
+    <li>
+        <a href="#table-of-contents">Table of Contents</a>
+    </li>
+    <li>
+        <a href="#création-et-mise-en-évidence-de-blocs-de-code">Création et mise en évidence de blocs de code</a>
+        <ul>
+            <li>
+                <a href="#blocs-de-code-clôturés">Blocs de code clôturés</a>
+            </li>
+            <li>
+                <a href="#mise-en-évidence-de-la-syntaxe">Mise en évidence de la syntaxe</a>
+            </li>
+            <li>
+                <a href="#liste-complète-des-langages-supportés">liste complète des langages supportés</a>
+            </li>
+            <li>
+                <a href="#lectures-complémentaires">Lectures complémentaires</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+
+retour au menu principal <a href="./index.html">Index</a>
+
+
+
+
+<h1 id="création-et-mise-en-évidence-de-blocs-de-code">Création et mise en évidence de blocs de code</h1> 
+
+<p>Partager des échantillons de code avec des blocs de code clôturés et activer la coloration syntaxique.</p> 
+
+
+
+<h2 id="blocs-de-code-clôturés">Blocs de code clôturés</h2> 
+
+<p>Vous pouvez créer des blocs de code clôturés en plaçant des triplets ``` avant et après le bloc de code. Nous vous recommandons de placer une ligne vierge avant et après les blocs de code pour faciliter la lecture du formatage brut.</p>
+<xmp>
+```
+function test() {
+    console.log("notice the blank line before this function?");
+}
+```
+</xmp>
+<xmp>
+    function test() {
+        console.log("notice the blank line before this function?");
+</xmp>
+<h2 id="mise-en-évidence-de-la-syntaxe">Mise en évidence de la syntaxe</h2> 
+
+<p>Vous pouvez ajouter un identifiant de langue facultatif pour activer la mise en évidence de la syntaxe dans votre bloc de code clôturé.</p>
+<ul>
+    <li>
+        <p>
+            Par exemple, pour mettre en évidence la syntaxe du code Ruby:
+        </p>
+    </li>
+</ul>
+
+<xmp>
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+</xmp>
+<xmp>
+    require 'redcarpet'
+    markdown = Redcarpet.new("Hello World!")
+    puts markdown.to_html](./ressources/Markdown-Ruby.png)
+</xmp>
+
+<ul>
+    <li>
+        Pour Json
+    </li>
+</ul>
+
+<xmp>
+```json
+{
+    "firstName": "John",
+    "lastName": "Smith",
+    "age": 25
+}
+```
+</xmp>
+
+<img src="/ressources/Markdown-Json.png">
+
+<ul>
+    <li>
+        Pour Javascript
+    </li>
+</ul>
+
+<xmp>
+```js
+var add2 = function(number) {
+	return number + 2;
+}
+```
+</xmp>
+<img src="./ressources/Markdown-javascript.png" alt="">
+
+
+<p>>Rem: Nous utilisons 'Linguist' pour effectuer la détection de la langue et sélectionner des grammaires tierces pour la coloration syntaxique. 
+
+Vous pouvez savoir quels mots clés sont valides dans le fichier YAML des langues.</p
+
+
+<h2 id="liste-complète-des-langages-supportés">liste complète des langages supportés</h2> 
+<xmp>
+    Cucumber ('*.feature')
+    abap ('*.abap')
+    ada ('*.adb', '*.ads', '*.ada')
+    ahk ('*.ahk', '*.ahkl')
+    apacheconf ('.htaccess', 'apache.conf', 'apache2.conf')
+    applescript ('*.applescript')
+    as ('*.as')
+    as3 ('*.as')
+    asy ('*.asy')
+    bash ('*.sh', '*.ksh', '*.bash', '*.ebuild', '*.eclass')
+    bat ('*.bat', '*.cmd')
+    befunge ('*.befunge')
+    blitzmax ('*.bmx')
+    boo ('*.boo')
+    brainfuck ('*.bf', '*.b')
+    c ('*.c', '*.h')
+    cfm ('*.cfm', '*.cfml', '*.cfc')
+    cheetah ('*.tmpl', '*.spt')
+    cl ('*.cl', '*.lisp', '*.el')
+    clojure ('*.clj', '*.cljs')
+    cmake ('*.cmake', 'CMakeLists.txt')
+    coffeescript ('*.coffee')
+    console ('*.sh-session')
+    control ('control')
+    cpp ('*.cpp', '*.hpp', '*.c++', '*.h++', '*.cc', '*.hh', '*.cxx', '*.hxx', '*.pde')
+    csharp ('*.cs')
+    css ('*.css')
+    cython ('*.pyx', '*.pxd', '*.pxi')
+    d ('*.d', '*.di')
+    delphi ('*.pas')
+    diff ('*.diff', '*.patch')
+    dpatch ('*.dpatch', '*.darcspatch')
+    duel ('*.duel', '*.jbst')
+    dylan ('*.dylan', '*.dyl')
+    erb ('*.erb')
+    erl ('*.erl-sh')
+    erlang ('*.erl', '*.hrl')
+    evoque ('*.evoque')
+    factor ('*.factor')
+    felix ('*.flx', '*.flxh')
+    fortran ('*.f', '*.f90')
+    gas ('*.s', '*.S')
+    genshi ('*.kid')
+    glsl ('*.vert', '*.frag', '*.geo')
+    gnuplot ('*.plot', '*.plt')
+    go ('*.go')
+    groff ('*.(1234567)', '*.man')
+    haml ('*.haml')
+    haskell ('*.hs')
+    html ('*.html', '*.htm', '*.xhtml', '*.xslt')
+    hx ('*.hx')
+    hybris ('*.hy', '*.hyb')
+    ini ('*.ini', '*.cfg')
+    io ('*.io')
+    ioke ('*.ik')
+    irc ('*.weechatlog')
+    jade ('*.jade')
+    java ('*.java')
+    js ('*.js')
+    jsp ('*.jsp')
+    lhs ('*.lhs')
+    llvm ('*.ll')
+    logtalk ('*.lgt')
+    lua ('*.lua', '*.wlua')
+    make ('*.mak', 'Makefile', 'makefile', 'Makefile.*', 'GNUmakefile')
+    mako ('*.mao')
+    maql ('*.maql')
+    mason ('*.mhtml', '*.mc', '*.mi', 'autohandler', 'dhandler')
+    markdown ('*.md')
+    modelica ('*.mo')
+    modula2 ('*.def', '*.mod')
+    moocode ('*.moo')
+    mupad ('*.mu')
+    mxml ('*.mxml')
+    myghty ('*.myt', 'autodelegate')
+    nasm ('*.asm', '*.ASM')
+    newspeak ('*.ns2')
+    objdump ('*.objdump')
+    objectivec ('*.m')
+    objectivej ('*.j')
+    ocaml ('*.ml', '*.mli', '*.mll', '*.mly')
+    ooc ('*.ooc')
+    perl ('*.pl', '*.pm')
+    php ('*.php', '*.php(345)')
+    postscript ('*.ps', '*.eps')
+    pot ('*.pot', '*.po')
+    pov ('*.pov', '*.inc')
+    prolog ('*.prolog', '*.pro', '*.pl')
+    properties ('*.properties')
+    protobuf ('*.proto')
+    py3tb ('*.py3tb')
+    pytb ('*.pytb')
+    python ('*.py', '*.pyw', '*.sc', 'SConstruct', 'SConscript', '*.tac')
+    rb ('*.rb', '*.rbw', 'Rakefile', '*.rake', '*.gemspec', '*.rbx', '*.duby')
+    rconsole ('*.Rout')
+    rebol ('*.r', '*.r3')
+    redcode ('*.cw')
+    rhtml ('*.rhtml')
+    rst ('*.rst', '*.rest')
+    sass ('*.sass')
+    scala ('*.scala')
+    scaml ('*.scaml')
+    scheme ('*.scm')
+    scss ('*.scss')
+    smalltalk ('*.st')
+    smarty ('*.tpl')
+    sourceslist ('sources.list')
+    splus ('*.S', '*.R')
+    sql ('*.sql')
+    sqlite3 ('*.sqlite3-console')
+    squidconf ('squid.conf')
+    ssp ('*.ssp')
+    tcl ('*.tcl')
+    tcsh ('*.tcsh', '*.csh')
+    tex ('*.tex', '*.aux', '*.toc')
+    text ('*.txt')
+    v ('*.v', '*.sv')
+    vala ('*.vala', '*.vapi')
+    vbnet ('*.vb', '*.bas')
+    velocity ('*.vm', '*.fhtml')
+    vim ('*.vim', '.vimrc')
+    xml ('*.xml', '*.xsl', '*.rss', '*.xslt', '*.xsd', '*.wsdl')
+    xquery ('*.xqy', '*.xquery')
+    xslt ('*.xsl', '*.xslt')
+    yaml ('*.yaml', '*.yml')
+</xmp>
+<h4 id="lectures-complémentaires">Lectures complémentaires</h4> 
+<ul>
+    <li>
+        <a href="https://github.github.com/gfm/">GitHub Flavored MarUtilisation du Markdown pour intégrer du code:</a>
+    </li>
+    <li>
+        <a href="https://help.github.com/en/articles/basic-writing-and-formatting-syntax">Basic writing and formatting syntax</a>
+    </li>
+</ul>
+
+<p>retour à <a href="./index.html">Main</a></p>
+    </body>
+</html>
